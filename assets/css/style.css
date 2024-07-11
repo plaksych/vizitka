@@ -1,0 +1,288 @@
+/* Body */
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	color: #FFFFFF;
+	line-height: 1.6;
+	background: #FFFFFF;
+	/*#3d4d88;*/
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+.photo {
+	width: 400px;
+	height: 400px;
+	float: left;
+}
+
+/* Container */
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	
+}
+
+/* Intro */
+.intro {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background:
+	url("../images/intro.jpg") center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.intro__inner {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	
+}
+
+.intro__title {
+	color: #fff;
+	font-size: 120px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1;
+}
+
+.intro__title:after {
+	content: "";
+	display: block;
+	width: 240px;
+	height: 3px;
+	margin: 30px auto 10px;
+	
+	background-color: #fff;
+}
+
+.intro__subtitle {
+	font-size: 60px;
+	color: #fff;
+	
+}
+
+/* Header */
+.header {
+	width: 100%;
+	padding-top: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+	font-size: 30px;
+	font-weight: 700;
+	color: #fff;
+	/*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+}
+
+/* Navigation */
+.nav {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.nav__link {
+	display: inline-block;
+	vertical-align:top;
+	margin: 0 10px;
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.1s linear;
+}
+
+.nav__link:after {
+	width: 100%;
+	height: 3px;
+	content:"";
+	
+	background: #d3e6b0;
+	opacity: 0;
+	
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	
+	transition: opacity 0.1s linear;
+}
+
+.nav__link:hover {
+	color: #d3e6b0;
+	
+}
+
+.nav__link:hover:after {
+	opacity: 1;
+}
+
+/* Button */
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	padding: 8px 30px;
+	
+	border: 3px solid #fff;
+	
+	font-size: 14;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+	transition: background 0.1s linear, color 0.1s linear;
+}
+
+.btn:hover {
+	background-color: #fff;
+	color: #fff;
+}
+
+/* Section */
+.section {
+	padding: 40px 0;
+}
+
+.section__header {
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto 40px;
+
+	text-align: center;
+}
+
+.section__title {
+	font-size: 36px;
+	color: #000;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.section__subtitle {
+	font-size: 24px;
+	color: #000;
+}
+
+.section__subtitle:after {
+	content: "";
+	display: block;
+	max-width: 180px;
+	width: 30 px;
+	height: 3px;
+	margin: 15px auto 0;
+	background-color: #000;
+}
+
+.section__article {
+	width: 100%;
+}
+
+.section__image {
+	width: 100%;
+	height: 400px;
+	width: 400px;
+}
+
+.section__text {
+	font-size: 15px;
+	color:#000;
+	justify-content: space-around;
+	text-align: right;
+}
+
+/*.section__text:after {
+	content: "";
+	display: block;
+	max-width: 180px;
+	width: 30 px;
+	height: 3px;
+	margin: 15px auto 0;
+	background-color: #000;
+}*/
+
+/* Referals */
+
+.referals {
+	padding: 40px 0;
+}
+
+.referals__header {
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto 40px;
+
+	text-align: center;
+}
+
+.referals__title {
+	font-size: 36px;
+	color: #000;
+	font-weight: 700;
+	text-transform: uppercase
+}
+
+.referals__title:after {
+	content: "";
+	display: block;
+	max-width: 180px;
+	width: 30 px;
+	height: 3px;
+	margin: 15px auto 0;
+	background-color: #000;
+}
+
+.referals__link {
+	display: flex;
+	justify-content: space-between;
+	font-size: 24px;
+	color: #000;
+	padding-left: 15%;
+	max-width: 800px;
+	text-align: center;
+
+}
+
+/*.referals__link:after {
+	width: 100%;
+	height: 3px;
+	content:"";
+	
+	background: #d3e6b0;
+	opacity: 0;
+	
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	
+	transition: opacity 0.1s linear;
+}
+
+.referals__link:hover {
+	color: #d3e6b0;
+	
+}
+
+.referals__link:hover:after {
+	opacity: 1;
+}*/
